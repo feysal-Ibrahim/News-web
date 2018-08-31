@@ -1,3 +1,16 @@
 <!doctype html>
-<link rel="stylesheet" type="text" href="{{ url_for('static', filename='style.css')}}">
-<h1> NEWS ON THE WAY!STAY TUNED</h1>
+<html>
+<head>
+<meta charset="utf-8">
+<title> {{titlle}}</title>
+<!--<title>NEWS ON THE WAY!</title>-->
+</head>
+<body>
+<h1>News sources</h1>
+<ul>
+    {% for news_sources in sources%}
+    <li>{{news_sources.name}}</li>
+    {%endfor%}
+</ul>
+</body>
+</html>
