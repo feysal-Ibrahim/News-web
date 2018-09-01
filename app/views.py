@@ -1,6 +1,7 @@
 from flask import render_template
-from  app import app
+from app import app
 from.request import get_news #import get_news function from request module
+from .request import get_article
 
 @app.route('/')
 def index():
@@ -12,4 +13,6 @@ def index():
 
 @app.route('/news/<int:id>')
 def news(id):
-  return render_template('news.html', id=id)
+    articles_list = get_article('article')
+    print('article')
+    return render_template('article.html', id=id, article=articles_list)

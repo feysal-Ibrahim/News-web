@@ -5,6 +5,7 @@
       <option name="ignoredIdentifiers">
         <list>
           <option value="app.models.news_test.news" />
+          <option value="app.request.ARTICLE_API_BASE_URL" />
         </list>
       </option>
     </inspection_tool>

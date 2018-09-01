@@ -1,6 +1,9 @@
 from flask import Flask
+
 '''
 initialize app with the flask module
+'''
+'''
 '''
 from .config import DevConfig
 '''
@@ -22,6 +25,7 @@ app.config.from_pyfile('config.py')
 '''
 The app.config.from_pyfile('config.py) connects to the config.py file and all its content are appended to the app.config
 '''
+
 
 from app import views
 '''
