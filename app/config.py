@@ -9,9 +9,9 @@ NB/we use {} to rep sections in the url that will be replaced with actual values
 '''
 
 
-class ProdConfig( Config ):
+class ProdConfig(Config):
     pass
 
 
-class DevConfig( Config ):
+class DevConfig( Config):
     Debug = True
