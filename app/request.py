@@ -1,6 +1,5 @@
 from app import app  # this is the flask app instance
 import urllib.request, json  # this help us create a connection to our API URL and send a request and json modules that will format the JSON response to a Python dictionary.
-
 from app.models import articles
 from app.models.articles import Article
 from .models import news
