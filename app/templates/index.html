@@ -1,12 +1,13 @@
 {% extends 'base.html'%}
-% import 'macros.html' as macro%}
+{% import 'macros.html' as macro%}
+
+
 {% block content %}
 <body>
 <h1>News sources</h1>
 <ul>
-    {{% macro displaySourcesList(sources_list) %}}
+    {{ macro.news_sources(news_sources)}}
 
 </ul>
 {% endblock%}
 </body>
-</html>
