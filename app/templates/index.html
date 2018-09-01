@@ -1,16 +1,12 @@
 {% extends 'base.html'%}
 % import 'macros.html' as macro%}
-<html>
-<head>
-<meta charset="utf-8">
-<title> {{titlle}}</title>
-<!--<title>NEWS ON THE WAY!</title>-->
-</head>
+{% block content %}
 <body>
 <h1>News sources</h1>
 <ul>
     {{% macro displaySourcesList(sources_list) %}}
 
 </ul>
+{% endblock%}
 </body>
 </html>
