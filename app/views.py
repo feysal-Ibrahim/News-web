@@ -5,6 +5,10 @@ from .request import get_article
 
 @app.route('/')
 def index():
+
+    '''
+    View root page function that returns the index page and its data
+    '''
     #getting  news sources
     news_sources = get_news('sources')
     print(news_sources)
