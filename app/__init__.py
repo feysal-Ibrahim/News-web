@@ -22,7 +22,6 @@ to the instance folder where the config file is located so that it can access th
 
 '''
 app.config.from_object(DevConfig)
-
 app.config.from_pyfile('config.py')
 
 '''
