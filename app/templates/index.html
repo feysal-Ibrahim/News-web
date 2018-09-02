@@ -1,7 +1,5 @@
 {% extends 'base.html'%}
-<doctype html>
-    <html>
-    <body>
+{% block content %}
     <h1>News sources</h1>
 
     <Ul>
@@ -9,7 +7,4 @@
         <li>{{news_sources.name}}</li>
         {%endfor%}
     </Ul>
-
-    </body>
-
-    </html>
+{% endblock%}

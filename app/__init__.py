@@ -1,5 +1,6 @@
 from flask import Flask
-# from flask_bootstrap import Bootstrap
+from flask_bootstrap import Bootstrap
+
 
 '''
 initialize app with the flask module
@@ -29,7 +30,7 @@ The app.config.from_pyfile('config.py) connects to the config.py file and all it
 '''
 
 # Initializing Flask Extensions
-# bootstrap = Bootstrap(app)
+bootstrap = Bootstrap(app)
 
 
 from app import views
