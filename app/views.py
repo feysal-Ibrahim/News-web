@@ -19,6 +19,7 @@ def news(id):
     '''
        View movie page function that returns the movie details page and its data
        '''
-    articles_list = get_article('article')
+    articles_list = get_article('id')
+    title = f'{articles_list.title}'
     print('article')
-    return render_template('article.html', id=id, article=articles_list)
+    return render_template('article.html', title =title, articles =articles_list)
