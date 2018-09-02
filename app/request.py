@@ -10,7 +10,7 @@ article = articles.Article
 
 # sources_base_url = 'https://newsapi.org/v2/sources&{}?&apiKey={}'
 article_base_url = 'https://newsapi.org/v2/top-headlines?sources={}&apiKey={}'
-api_key = '32af9c23bb824ff68655f516b53d7e6d'  # accessing our api key by accessing our config object
+api_Key = '32af9c23bb824ff68655f516b53d7e6d'  # accessing our api key by accessing our config object
 
 
 # base_url = app.config["NEWS_API_BASE_URL"]
@@ -51,7 +51,7 @@ def process_sources(sources_list):
 
 
 def get_article(id):
-    get_article_details_url = article_base_url.format(api_key, id)
+    get_article_details_url = article_base_url.format(id, api_Key)
     with urllib.request.urlopen(get_article_details_url) as url:
         get_article_data = url.read()
         get_article_response = json.loads(get_article_data)
@@ -70,7 +70,7 @@ def process_articles(articles_list):
     for article_item in articles_list:
         id = article_item.get ( 'id' )
         name = article_item.get ( 'name' )
-        description = article_item.get ( 'description' )
+        description = article_item.get ('description')
         title = article_item.get ( 'title' )
         publishedAt = article_item.get ( 'publishedAt' )
         urlToImage = article_item.get ( 'urlToImage' )
