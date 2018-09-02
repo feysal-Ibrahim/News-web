@@ -1,8 +1,14 @@
-{% extends 'base.html'%}
-{% import 'macros.html' as macro%}
+<doctype html>
 
+    <html>
+    <body>
+    <h1>News sources</h1>
+    <Ul>
+        {%for news_sources in sources%}
+        <li>{{news_sources.name}}</li>
+        {%endfor%}
+    </Ul>
 
-{% block content %}
-<h1>News sources</h1>
-    {{ macro.news_sources(news_sources)}}
-  {% endblock%}
+    </body>
+
+    </html>

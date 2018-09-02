@@ -1,6 +1,7 @@
-{% extends 'base.html'%}
-{% block content %}
+<doctype html>
 
+    <html>
+    <body>
 <div class="container">
 
     <!-- Poster background -->
@@ -11,12 +12,13 @@
         <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 movie-details">
             <h3>{{ news_articles.title }}</h3>
 
-            <p class="overview"> {{ news_articles.name}}</p>
-            <p class="ratings"> <b> {{news_articles.description}}</b> - <i>{{ news_articles.publishedAt}}</i> </p>
+            <p class="overview"> {{news_articles.name}}</p>
+            <p class="ratings"> <b> {{news_articles.description}}</b> - <i>{{news_articles.publishedAt}}</i> </p>
 
 
         </div>
     </div>
 
 </div>
-{%endblock%}
+    </body>
+    </html>
