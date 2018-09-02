@@ -1,20 +1,22 @@
 {% extends 'base.html'%}
 {% block content %}
 
+<div class="container">
+
+    <!-- Poster background -->
+    <div class="row">
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 posterPath" style="background: url({{news_articles.urlToImage}}) no-repeat center center">
+        </div>
+
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 movie-details">
+            <h3>{{ news_articles.title }}</h3>
+
+            <p class="overview"> {{ news_articles.name}}</p>
+            <p class="ratings"> <b> {{news_articles.description}}</b> - <i>{{ news_articles.publishedAt}}</i> </p>
 
 
+        </div>
+    </div>
 
-
-
-
-
-
-
-<ul>
-    {% for news_articles in articles%}
-    <li>{{news_articles.name}}</li>
-    {%endfor%}
-</ul>
-
-
-{% endblock %}
+</div>
+{%endblock%}
