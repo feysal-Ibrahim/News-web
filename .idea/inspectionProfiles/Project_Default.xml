@@ -6,6 +6,9 @@
         <list>
           <option value="app.models.news_test.news" />
           <option value="app.request.ARTICLE_API_BASE_URL" />
+          <option value="app.app" />
+          <option value="app.main.errors" />
+          <option value="app.*" />
         </list>
       </option>
     </inspection_tool>

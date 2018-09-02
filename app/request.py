@@ -8,6 +8,18 @@ from .models import news
 News = news.News
 article = articles.Article
 
+
+# Getting api key
+api_key = None
+# Getting the movie base url
+base_url = None
+
+def configure_request(app):
+    global api_key,base_url
+    api_key = app.config['NEWS_API_BASE_URL']
+    base_url = app.config['NEWS_API_BASE_URL']
+
+
 # sources_base_url = 'https://newsapi.org/v2/sources&{}?&apiKey={}'
 article_base_url = 'https://newsapi.org/v2/top-headlines?sources={}&apiKey={}'
 api_Key = '32af9c23bb824ff68655f516b53d7e6d'  # accessing our api key by accessing our config object

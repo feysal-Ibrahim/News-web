@@ -1,6 +1,5 @@
 from flask import Flask
 from flask_bootstrap import Bootstrap
-from config import config_options
 
 
 '''
@@ -10,7 +9,6 @@ initialize app with the flask module
 '''
 from .config import DevConfig
 '''
-
 '''
 
 app = Flask(__name__, instance_relative_config=True)
@@ -20,10 +18,15 @@ app = Flask(__name__, instance_relative_config=True)
 2.add news api key to the config file in the instance folder in root app and then connects it to
 the app by passing it in the __name__ variable when the app is instantiated.this allows us to connect
 to the instance folder where the config file is located so that it can access the api key. 
+'''
+app.config.from_object(DevConfig)
+app.config.from_pyfile('config.py')
 
 '''
-# Creating the app configurations
-app.config.from_object ( config_options[config_name] )
+The app.config.from_pyfile('config.py) connects to the config.py file and all its content are appended to the app.config
+'''
 
+# Initializing Flask Extensions
+bootstrap = Bootstrap(app)
 
-
+from app import views
