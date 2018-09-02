@@ -22,19 +22,8 @@ the app by passing it in the __name__ variable when the app is instantiated.this
 to the instance folder where the config file is located so that it can access the api key. 
 
 '''
-app.config.from_object(DevConfig)
-app.config.from_pyfile('config.py')
-
-'''
-The app.config.from_pyfile('config.py) connects to the config.py file and all its content are appended to the app.config
-'''
-
-# Initializing Flask Extensions
-bootstrap = Bootstrap(app)
+# Creating the app configurations
+app.config.from_object ( config_options[config_name] )
 
 
-from app import views
-from app import error
-'''
 
-'''
