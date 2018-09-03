@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ca66ccd6-66bb-4815-accf-d6888044bb9e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../app/request.py" beforeDir="false" afterPath="$PROJECT_DIR$/../app/request.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/templates/article.html" beforeDir="false" afterPath="$PROJECT_DIR$/../app/templates/article.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -64,7 +62,7 @@
           <entry key="css" value="56" />
           <entry key="html" value="1289" />
           <entry key="md" value="247" />
-          <entry key="py" value="7212" />
+          <entry key="py" value="7233" />
           <entry key="sh" value="12" />
         </counts>
       </usages-collector>
@@ -74,13 +72,13 @@
           <entry key="HTML" value="1289" />
           <entry key="Markdown" value="247" />
           <entry key="PLAIN_TEXT" value="12" />
-          <entry key="Python" value="7212" />
+          <entry key="Python" value="7233" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="css" value="3" />
-          <entry key="html" value="18" />
+          <entry key="html" value="19" />
           <entry key="md" value="4" />
           <entry key="procfile" value="1" />
           <entry key="py" value="81" />
@@ -91,7 +89,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="3" />
-          <entry key="HTML" value="18" />
+          <entry key="HTML" value="19" />
           <entry key="Markdown" value="4" />
           <entry key="PLAIN_TEXT" value="3" />
           <entry key="Python" value="81" />
@@ -104,8 +102,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../app/config.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="86" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="86" />
+            <state relative-caret-position="15">
+              <caret line="1" column="67" lean-forward="true" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="67" />
             </state>
           </provider>
         </entry>
@@ -132,13 +130,18 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../app/templates/article.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="68" lean-forward="true" selection-start-line="3" selection-start-column="68" selection-end-line="3" selection-end-column="68" />
+            <state relative-caret-position="105">
+              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../app/templates/macros.html">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -180,11 +183,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../app/request.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="423">
-              <caret line="83" column="41" selection-start-line="83" selection-start-column="41" selection-end-line="83" selection-end-column="41" />
+            <state relative-caret-position="153">
+              <caret line="32" column="4" selection-start-line="32" selection-start-column="6" selection-end-line="32" selection-end-column="97" />
               <folding>
                 <element signature="e#0#53#0" expanded="true" />
               </folding>
@@ -235,8 +238,8 @@
         <option value="$PROJECT_DIR$/../app/static/style.css" />
         <option value="$PROJECT_DIR$/../app/config.py" />
         <option value="$PROJECT_DIR$/../app/views.py" />
-        <option value="$PROJECT_DIR$/../app/request.py" />
         <option value="$PROJECT_DIR$/../app/templates/article.html" />
+        <option value="$PROJECT_DIR$/../app/request.py" />
       </list>
     </option>
   </component>
@@ -416,9 +419,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../app/templates/macros.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/../app/templates/fourOwfour.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -513,13 +513,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../app/config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="86" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="86" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../app/static/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -565,20 +558,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../app/request.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="423">
-          <caret line="83" column="41" selection-start-line="83" selection-start-column="41" selection-end-line="83" selection-end-column="41" />
-          <folding>
-            <element signature="e#0#53#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/../app/templates/macros.html">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/../app/templates/article.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="68" lean-forward="true" selection-start-line="3" selection-start-column="68" selection-end-line="3" selection-end-column="68" />
+        <state relative-caret-position="105">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../app/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="67" lean-forward="true" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../app/request.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="32" column="4" selection-start-line="32" selection-start-column="6" selection-end-line="32" selection-end-column="97" />
+          <folding>
+            <element signature="e#0#53#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
