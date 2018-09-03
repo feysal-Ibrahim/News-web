@@ -14,12 +14,10 @@ def index():
     title ='Home - We Provide the latest News'
     return render_template('index.html', title=title, sources=news_sources)
 
-@app.route('/news/<id>')
-def news(id):
-    '''
-       View movie page function that returns the movie details page and its data
-       '''
-    news_articles = get_article('id')
-    title = f'{news_articles.name}'
-    print('article')
-    return render_template('article.html', title=title, id=news_articles)
+@app.route('/article/')
+def news():
+
+    new_articles=get_article()
+    print(new_articles)
+    return render_template('article.html', articles=new_articles)
+

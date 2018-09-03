@@ -1,11 +1,10 @@
 from app import app  # this is the flask app instance
 import urllib.request, json  # this help us create a connection to our API URL and send a request and json modules that will format the JSON response to a Python dictionary.
-from app.models import articles
-from app.models.articles import Article
-from .models import news
+from .models import news, articles
+from app import app
 
 News = news.News
-article = articles.Article
+Article = articles.Article
 
 
 # Getting api key
@@ -20,8 +19,8 @@ def configure_request(app):
 
 
 # sources_base_url = 'https://newsapi.org/v2/sources&{}?&apiKey={}'
-article_base_url = 'https://newsapi.org/v2/top-headlines?sources={}&apiKey={}'
-api_Key = '32af9c23bb824ff68655f516b53d7e6d'  # accessing our api key by accessing our config object
+article_base_url = 'https://newsapi.org/v2/top-headlines?country=us&apiKey={}'
+api_key = '32af9c23bb824ff68655f516b53d7e6d'  # accessing our api key by accessing our config object
 
 
 # base_url = app.config["NEWS_API_BASE_URL"]
@@ -61,8 +60,8 @@ def process_sources(sources_list):
     return news_sources
 
 
-def get_article(id):
-    get_article_details_url = article_base_url.format(id, api_Key)
+def get_article():
+    get_article_details_url = article_base_url.format(api_key)
     with urllib.request.urlopen(get_article_details_url) as url:
         get_article_data = url.read()
         get_article_response = json.loads(get_article_data)
@@ -87,7 +86,7 @@ def process_articles(articles_list):
         urlToImage = article_item.get ( 'urlToImage' )
         author = article_item.get ( 'author' )
         url = article_item.get ( ' url' )
-        news_object=Article( id, name, description, url, title, urlToImage, publishedAt, author )
-        news_articles.append(news_object)
+        articles_object=Article( id, name, description, url, title, urlToImage, publishedAt, author )
+        news_articles.append(articles_object)
 
     return news_articles
