@@ -1,4 +1,5 @@
 {% extends 'base.html'%}
+{% import 'macros.html' as macro %}
 
 <!-- Styles block -->
 
@@ -9,11 +10,15 @@
 {% endblock %}
 
 {% block content %}
-    <h1>News sources</h1>
+
+   <h1>News sources</h1>
 
     <Ul>
         {%for news_sources in sources%}
         <li>{{news_sources.name}}</li>
         {%endfor%}
     </Ul>
+
+
 {% endblock%}
+

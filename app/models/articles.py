@@ -7,5 +7,5 @@ class Article:
         self.url = url
         self.title = title
         self.urlToImage = urlToImage
-        self.publishedAt = publishedAt
+        self.date = publishedAt
         self.author = author
