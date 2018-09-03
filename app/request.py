@@ -1,6 +1,5 @@
 from app import app  # this is the flask app instance
-import urllib.request, \
-    json  # this help us create a connection to our API URL and send a request and json modules that will format the JSON response to a Python dictionary.
+import urllib.request, json  # this help us create a connection to our API URL and send a request and json modules that will format the JSON response to a Python dictionary.
 from app.models import articles
 from app.models.articles import Article
 from .models import news
@@ -15,7 +14,7 @@ api_key = None
 base_url = None
 
 def configure_request(app):
-    global api_key,base_url
+    global api_key, base_url
     api_key = app.config['NEWS_API_BASE_URL']
     base_url = app.config['NEWS_API_BASE_URL']
 
@@ -31,10 +30,10 @@ api_Key = '32af9c23bb824ff68655f516b53d7e6d'  # accessing our api key by accessi
 def get_news(sources):
     # get_news_url = base_url.format(sources,api_key)
 
-    dumb_url = 'https://newsapi.org/v2/' + sources + '?&apiKey=32af9c23bb824ff68655f516b53d7e6d'
+    wtf_url = 'https://newsapi.org/v2/' + sources + '?&apiKey=32af9c23bb824ff68655f516b53d7e6d'
     # https: // newsapi.org / v2 / everything?& apiKey =
 
-    with urllib.request.urlopen(dumb_url) as url:
+    with urllib.request.urlopen(wtf_url) as url:
         get_news_data = url.read()
         get_news_response = json.loads(get_news_data)
 

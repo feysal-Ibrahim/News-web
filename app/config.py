@@ -3,9 +3,6 @@ class Config:
     ARTICLE_API_BASE_URL = 'https://newsapi.org/v2/top-headlines?sources={}&apiKey={}'
 
 
-    pass
-
-
 '''
 store the news base url inside app.config file.
 NB/we use {} to rep sections in the url that will be replaced with actual values.
