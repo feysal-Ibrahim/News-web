@@ -1,6 +1,12 @@
 {%for new_articles in articles %}
 <h1>{{new_articles.title}}</h1>
 <p>{{new_articles.description}}</p>
+<p>{{new_articles.title}}</p>
+<p>{{new_articles.country}}</p>
+<p>{{new_articles.author}}</p>
+<p>{{new_articles.publishedAt}}</p>
+
+
     <div><img src="{{new_articles.urlToImage}}"alt="no image"></div>
 {%endfor%}
 
