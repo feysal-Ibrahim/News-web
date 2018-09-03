@@ -81,7 +81,7 @@ def process_articles(articles_list):
         id = article_item.get ( 'id' )
         name = article_item.get ( 'name' )
         description = article_item.get ('description')
-        title = article_item.get ( 'title' )
+        title = article_item.get ('title')
         publishedAt = article_item.get ( 'publishedAt' )
         urlToImage = article_item.get ( 'urlToImage' )
         author = article_item.get ( 'author' )
