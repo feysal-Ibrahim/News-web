@@ -32,7 +32,7 @@ def get_news():
 
     # wtf_url = 'https://newsapi.org/v2/' + sources + '?&apiKey=32af9c23bb824ff68655f516b53d7e6d'
     # https: // newsapi.org / v2 / everything?& apiKey =
-    get_news_details_url = article_base_url.format ( api_key )
+    get_news_details_url = new_base_url.format (api_key)
     with urllib.request.urlopen(get_news_details_url) as url:
         get_news_data = url.read()
         get_news_response = json.loads(get_news_data)
