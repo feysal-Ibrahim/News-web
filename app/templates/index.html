@@ -1,11 +1,11 @@
 {% extends 'base.html'%}
-{% import 'macros.html' as macro %}
+<!--{% import 'macros.html' as macro %}-->
 
-<!-- Styles block -->
+ Styles block
 
 {% block styles%}
     {{ super() }}
-     <link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}">
+<link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}" xmlns="http://www.w3.org/1999/html">
 
 {% endblock %}
 
@@ -13,17 +13,21 @@
 
    <h1>News sources</h1>
 
-    <Ul>
+    <ul>
 
-        {%for source in sources%}
-        <div class="jumbatron">
-        <a href="/article/{{source.id}}">
-        <li>{{source.name}}</li>
-        </a>
+        {%for source in sources %}
+        	            <div class="col-md-2">
+
+		            <div class="panel panel-default">
+						<div class="panel-heading">
+                            <li><strong>{{source.name}}</strong></li>
+                            <a href="/article/{{source.id}}">View Articles</a>
         </div>
-        {%endfor%}
+            </div>
+                        </div>
     </Ul>
 
+        {%endfor%}
 
 {% endblock%}
 
