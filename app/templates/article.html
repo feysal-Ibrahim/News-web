@@ -1,13 +1,12 @@
 {%for new_articles in articles %}
+<a href={{new_articles.url}}>
 <h1>{{new_articles.title}}</h1>
+</a>
 <p>{{new_articles.description}}</p>
-<p>{{new_articles.title}}</p>
 <p>{{new_articles.country}}</p>
 <p>{{new_articles.author}}</p>
 <p>{{new_articles.publishedAt}}</p>
-
-
-    <div><img src="{{new_articles.urlToImage}}"alt="no image"></div>
+    <img src='{{new_articles.urlToImage}}'alt="no image">
 {%endfor%}
 
 <h1>news article works</h1>

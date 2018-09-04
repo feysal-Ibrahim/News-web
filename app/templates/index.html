@@ -14,8 +14,13 @@
    <h1>News sources</h1>
 
     <Ul>
-        {%for news_sources in sources%}
-        <li>{{news_sources.name}}</li>
+
+        {%for source in sources%}
+        <div class="jumbatron">
+        <a href="/article/{{source.id}}">
+        <li>{{source.name}}</li>
+        </a>
+        </div>
         {%endfor%}
     </Ul>
 
