@@ -4,9 +4,6 @@
     <list default="true" id="ca66ccd6-66bb-4815-accf-d6888044bb9e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Specs.md" beforeDir="false" afterPath="$PROJECT_DIR$/../Specs.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/templates/article.html" beforeDir="false" afterPath="$PROJECT_DIR$/../app/templates/article.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../app/templates/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -69,7 +66,7 @@
         <counts>
           <entry key="css" value="271" />
           <entry key="html" value="2063" />
-          <entry key="md" value="362" />
+          <entry key="md" value="368" />
           <entry key="py" value="7867" />
           <entry key="sh" value="21" />
         </counts>
@@ -79,7 +76,7 @@
           <entry key="Bash" value="9" />
           <entry key="CSS" value="271" />
           <entry key="HTML" value="2063" />
-          <entry key="Markdown" value="362" />
+          <entry key="Markdown" value="368" />
           <entry key="PLAIN_TEXT" value="12" />
           <entry key="Python" value="7867" />
         </counts>
@@ -189,8 +186,8 @@
         <entry file="file://$PROJECT_DIR$/../README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="15">
-                <caret line="1" column="116" selection-start-line="1" selection-end-line="1" selection-end-column="116" />
+              <first_editor relative-caret-position="45">
+                <caret line="3" column="38" lean-forward="true" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="38" />
               </first_editor>
               <second_editor />
             </state>
@@ -391,7 +388,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32918552" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.2081448" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.2081448" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.3295964" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -604,8 +601,8 @@
     <entry file="file://$PROJECT_DIR$/../README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="15">
-            <caret line="1" column="116" selection-start-line="1" selection-end-line="1" selection-end-column="116" />
+          <first_editor relative-caret-position="45">
+            <caret line="3" column="38" lean-forward="true" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="38" />
           </first_editor>
           <second_editor />
         </state>
