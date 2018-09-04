@@ -5,7 +5,7 @@
 
 {% block styles%}
     {{ super() }}
-<link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}" xmlns="http://www.w3.org/1999/html">
+<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='style.css')}}">
 
 {% endblock %}
 
@@ -16,12 +16,12 @@
     <ul>
 
         {%for source in sources %}
-        	            <div class="col-md-2">
+        	            <div class="col-md-3">
 
 		            <div class="panel panel-default">
 						<div class="panel-heading">
-                            <li><strong>{{source.name}}</strong></li>
-                            <a href="/article/{{source.id}}">View Articles</a>
+                            <div><strong>{{source.name}}</strong></li></div>
+                            <a href="/article/{{source.id}}"class="btn btn-warning btn-sm">Visit Article</a>
         </div>
             </div>
                         </div>

@@ -1,4 +1,6 @@
+{% block content %}
 {%for new_articles in articles %}
+<div class="col-md-6">
 <a href={{new_articles.url}}>
 <h1>{{new_articles.title}}</h1>
 </a>
@@ -6,7 +8,8 @@
 <p>{{new_articles.country}}</p>
 <p>{{new_articles.author}}</p>
 <p>{{new_articles.publishedAt}}</p>
-    <img src='{{new_articles.urlToImage}}'alt="no image">
+    <img src='{{new_articles.urlToImage}}'alt="no image"class="img-responsive" styles="height:30px">
+</div>
 {%endfor%}
 
-<h1>news article works</h1>
+{% endblock%}
